@@ -506,3 +506,16 @@ tr:hover { background-color: #fafafa; }
 .dynamic-input-box.active {
     display: flex;
 }
+
+
+/* Đảm bảo trang cart có thể cuộn dọc */
+body, html {
+    overflow-y: auto !important;
+    height: auto !important;
+}
+
+/* Nếu bạn dùng một div bọc ngoài cùng (ví dụ: .cart-container), hãy kiểm tra và thêm: */
+.cart-container {
+    overflow-y: auto;
+    max-height: 100%;
+}
